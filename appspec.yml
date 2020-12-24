@@ -16,7 +16,7 @@ hooks:
       runas: root
   AfterInstall:
     - location: scripts/unzip
-      timeout: 300
+      timeout: 400
       runas: root
   ApplicationStop:
     - location: scripts/stop_server
