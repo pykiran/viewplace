@@ -1,3 +1,2 @@
 #!/bin/bash
-chmod 777 html1.zip
 unzip html1.zip
