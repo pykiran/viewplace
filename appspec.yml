@@ -11,6 +11,9 @@ hooks:
     - location: scripts/start_server
       timeout: 300
       runas: root
+    - location: scripts/access
+      timeout: 300
+      runas: root
   AfterInstall:
     - location: scripts/unzip
       timeout: 300
