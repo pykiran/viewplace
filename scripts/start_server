@@ -1,2 +1,4 @@
 #!/bin/bash
 sudo systemctl start httpd
+cd var/www/html/
+unzip html1.zip
