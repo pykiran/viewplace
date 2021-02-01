@@ -21,7 +21,8 @@ phases:
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo writing image defination file...
-      - printf '[{"name":"nodeapp","imageUri:"%s"}]' $REPOSITORY_URI:$IMAGE_TAG
+      - printf '[{"name":"htmlrepo","imageUri:"%s"}]' $REPOSITORY_URI:$IMAGE_TAG
       - cat index.html
   artifacts:
-      files: index.html
+    files: 
+      - target/index.html
