@@ -16,7 +16,7 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push 844403568518.dkr.ecr.ca-central-1.amazonaws.com/deveolpenv:latest
-      - printf '[{"name":"servicename","imageUri":"844403568518.dkr.ecr.ca-central-1.amazonaws.com/deveolpenv"}]'> imagedefinitions.json
+      - printf '[{"name":"taskdef2","imageUri":"844403568518.dkr.ecr.ca-central-1.amazonaws.com/deveolpenv"}]'> imagedefinitions.json
       - cat imagedefinitions.json 
 artifacts:
     files: imagedefinitions.json
