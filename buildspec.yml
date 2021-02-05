@@ -16,7 +16,7 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image..
       - docker push 844403568518.dkr.ecr.ca-central-1.amazonaws.com/htmlreg:latest
-      - printf '{"ImageURI":"844403568518.dkr.ecr.ca-central-1.amazonaws.com/htmlreg:latest"}' > imageDetail.json
-      - cat imageDetail.json 
+      - printf '{"name":"test","ImageURI":"844403568518.dkr.ecr.ca-central-1.amazonaws.com/htmlreg:latest"}' > imagedefinitions.json
+      - cat imagedefinitions.json 
 artifacts:
-    files: imageDetail.json
+    files: imagedefinitions.json
