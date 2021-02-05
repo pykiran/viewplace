@@ -9,14 +9,14 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...          
-      - docker build -t htmltest .
+      - docker build -t htmlreg .
       - docker tag htmltest:latest 844403568518.dkr.ecr.ca-central-1.amazonaws.com/htmltest:latest     
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image..
-      - docker push 844403568518.dkr.ecr.ca-central-1.amazonaws.com/htmltest:latest
-      - printf '[{"name":"test","imageUri":"844403568518.dkr.ecr.ca-central-1.amazonaws.com/htmltest"}]'> imagedefinitions.json
+      - docker push 844403568518.dkr.ecr.ca-central-1.amazonaws.com/htmlreg:latest
+      - printf '[{"name":"test","imageUri":"844403568518.dkr.ecr.ca-central-1.amazonaws.com/htmlreg"}]'> imagedefinitions.json
       - cat imagedefinitions.json 
 artifacts:
     files: imagedefinitions.json
