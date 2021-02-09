@@ -5,5 +5,5 @@ Resources:
       Properties:
         - TaskDefinition: "arn:aws:ecs:ca-central-1:844403568518:task-definition/test:13"
         LoadBalancerInfo:
-          ContainerName: "test"
+          - ContainerName: "test"
           ContainerPort: 80
